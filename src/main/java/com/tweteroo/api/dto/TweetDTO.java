@@ -1,5 +1,5 @@
 package com.tweteroo.api.dto;
 
-public record TweetDTO(String username, String tweet, String avatar) {
-
+public record TweetDTO(String text) {
+    
 }

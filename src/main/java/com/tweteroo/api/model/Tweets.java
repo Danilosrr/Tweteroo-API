@@ -14,11 +14,11 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 
-public class Tweet {
+public class Tweets {
 
-    public Tweet(TweetDTO data) {
-        this.username = data.username();
-        this.tweet = data.tweet();
+    public Tweets(TweetDTO data, String user) {
+        this.username = user;
+        this.text = data.text();
     }
 
     @Id
@@ -29,7 +29,7 @@ public class Tweet {
     private String username;
 
     @Column(length = 400, nullable = true)
-    private String tweet;
+    private String text;
 
     @Column(length = 100, nullable = true)
     private String avatar;

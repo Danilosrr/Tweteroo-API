@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.tweteroo.api.model.Tweet;
+import com.tweteroo.api.model.Tweets;
 
-public interface TweetsRepository extends JpaRepository<Tweet, Long> {
-    List<Tweet> findByUsername(String username);
+public interface TweetsRepository extends JpaRepository<Tweets, Long> {
+    List<Tweets> findByUsername(String username);
 }
